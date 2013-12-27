@@ -1,8 +1,12 @@
 {
 	"require": {
-		"slim/slim": "2.4.0"
+		"slim/slim": "2.4.0",
+		"twig/twig": "v1.15.0"
 	},
 	"require-dev": {
 		"codeception/codeception": "1.7.4"
+	},
+	"autoload": {
+		"classmap": ["app/"]
 	}
 }

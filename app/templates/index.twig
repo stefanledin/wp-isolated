@@ -1,0 +1,14 @@
+{% extends 'master.twig' %}
+
+{% block content %}
+	<h3>Nyheter</h3>
+	<ul>
+	{% for item in newsItems %}
+		<li><a href="nyheter/{{ item.post_name }}">{{ item.post_title }}</a></li>
+	{% endfor %}
+	</ul>
+	<h3>Sidor</h3>
+	<ul>
+		<li><a href="kunder/fotografiska">Fotografiska</a></li>
+	</ul>
+{% endblock %}
